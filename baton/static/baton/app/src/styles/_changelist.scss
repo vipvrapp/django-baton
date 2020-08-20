@@ -17,7 +17,6 @@
     clear: both;
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
 
     // no object tools
     &:first-child {
@@ -274,14 +273,17 @@
     @extend .mt-2;
     @extend .table-responsive;
     background: $changelist-bg;
+    overflow-x: unset;
 
     table {
       @extend .table;
       @extend .table-bordered;
 
-      thead > tr {
+      thead > tr > th {
         background: $rl-head-bg;
         color: $rl-head-color;
+        position: sticky;
+        top: 0;
       }
 
       tbody tr:nth-child(2n + 1) {
