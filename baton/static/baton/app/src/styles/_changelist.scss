@@ -278,12 +278,17 @@
     table {
       @extend .table;
       @extend .table-bordered;
+      font-size: 14px;
 
       thead > tr > th {
         background: $rl-head-bg;
         color: $rl-head-color;
         position: sticky;
         top: 0;
+      }
+
+      tbody tr:nth-child(2n) {
+        background: $changelist-bg;
       }
 
       tbody tr:nth-child(2n + 1) {
