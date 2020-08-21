@@ -5,6 +5,20 @@
 
     > form {
       @extend %admin-form;
+      overflow: unset;
+
+      .inline-related .module {
+        overflow-x: unset;
+
+        th {
+          position: sticky;
+          top: 0;
+        }
+
+        .timezonewarning {
+          display: none;
+        }
+      }
     }
   }
 
