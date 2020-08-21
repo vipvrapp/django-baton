@@ -89,6 +89,7 @@ body:not(.menu-mobile) {
       color: $menu-link-color !important;
 
       &.view-site {
+        display: none;
         &::after {
           content: '\f108';
           font-family: 'Font Awesome\ 5 Free';
