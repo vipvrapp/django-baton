@@ -67,6 +67,7 @@ body:not(.menu-mobile) {
     .gravatar-icon {
       border: 2px solid $gravatar-border-color;
       border-radius: 50%;
+      display: none;
     }
 
     .user-info {
@@ -89,7 +90,6 @@ body:not(.menu-mobile) {
       color: $menu-link-color !important;
 
       &.view-site {
-        display: none;
         &::after {
           content: '\f108';
           font-family: 'Font Awesome\ 5 Free';
@@ -112,7 +112,7 @@ body:not(.menu-mobile) {
       }
 
       &::after {
-        color: lighten($primary, 20%);
+        color: #fff;
         font-size: 1.3rem;
         display: inline-block;
         margin: 0 .6rem;
