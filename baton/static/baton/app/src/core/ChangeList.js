@@ -14,6 +14,12 @@ let ChangeList = {
     if (this._filtersDiv.length) {
       this.activate()
     }
+    // Remove autofocus on search inputs which makes pressing checkboxes on
+    // certain browsers extremely painful/not possible.
+    const searchbar = $('#searchbar')
+    if (searchbar.length) {
+      searchbar.removeAttr('autofocus')
+    }
   },
   activate: function () {
     // filters active?
